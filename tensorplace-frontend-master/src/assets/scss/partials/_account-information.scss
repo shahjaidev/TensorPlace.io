@@ -1,0 +1,87 @@
+    .account-info {
+        display: block;
+        .list-wraper {
+            margin-top: 30px;
+            .title {
+                h4 {
+                    font-weight: 600;
+                    @media screen and (max-width: 767px) {
+                        font-size: 22px;
+                        margin-bottom: 8px;
+                    }
+                }
+            }
+            .table-responsive {
+                .bg-head {
+                    background-color: #f3f5f6;
+                    th {
+                        color: $text_color;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+        .review {
+            margin-top: 30px;
+            .title {
+                h4 {
+                    font-weight: 600;
+                }
+            }
+            .img-sm {
+                width: 43px;
+                height: 43px;
+            }
+            .content-wrap {
+                font-size: 15px;
+                font-weight: 600;
+                strong {
+                    color: $text_color;
+                    font-weight: 700;
+                }
+            }
+        }
+        .title {
+            h2 {
+                font-size: 28px;
+                font-weight: bold;
+                margin-bottom: 20px;
+            }
+        }
+        .card {
+            border: 1px solid $light-color;
+            box-shadow: none;
+            padding: 25px;
+            .card-body {
+                padding: 0;
+                .card-title {
+                    font-weight: 600;
+                }
+                .balance-rate {
+                    h2 {
+                        color: $primary-color;
+                        font-size: 28px;
+                        font-weight: 600;
+                    }
+                }
+                .rounded {
+                    .fa-balance-scale {
+                        color: $white;
+                        font-size: 40px;
+                    }
+                }
+            }
+        }
+        .button {
+            .btn {
+                @include theme-btn($width: 310px, $padding: 10px);
+                margin-top: 30px;
+                @media screen and (max-width: 767px) {
+                    margin-top: 20px;
+                }
+                @media screen and (max-width: 575px) {
+                    @include theme-btn($width: 290px, $padding: 10px);
+                }
+            }
+        }
+    }

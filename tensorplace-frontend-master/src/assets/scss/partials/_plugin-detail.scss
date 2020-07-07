@@ -1,0 +1,435 @@
+.plugin-detail-wrap {
+  .detail-inner-wrap {
+    background-color: $white;
+    padding: 20px;
+    @media screen and (max-width: 575px) {
+      padding: 15px;
+    }
+    .pluging-header {
+      margin-bottom: 30px;
+      @media screen and (max-width: 575px) {
+        margin-bottom: 10px;
+      }
+      .plugin-thubnail {
+        width: 100px;
+        margin-right: 15px;
+        @media screen and (max-width: 575px) {
+          width: 60px;
+        }
+        img {
+          width: 100%;
+        }
+      }
+      .plugin-info {
+        width: calc(100% - 115px);
+        flex-wrap: wrap;
+        @media screen and (max-width: 575px) {
+          width: calc(100% - 60px);
+        }
+        .title {
+          margin-right: 30px;
+          @media screen and (max-width: 767px) {
+            width: 100%;
+          }
+          h2 {
+            font-size: 29px;
+            line-height: 34px;
+            margin-bottom: 5px;
+            @media screen and (max-width: 575px) {
+              font-size: 22px;
+            }
+          }
+          p {
+            margin: 0;
+          }
+          .rating {
+            margin-bottom: 5px;
+            .rating-count {
+              font-size: 14px;
+              margin-left: 8px;
+              a {
+                color: $text-color;
+                &:hover {
+                  text-decoration: none;
+                }
+              }
+            }
+            .rating-wrap {
+              display: flex;
+              .dv-star-rating {
+                label {
+                  margin: 0;
+                }
+              }
+            }
+            img {
+              width: 100px;
+              margin-right: 10px;
+            }
+          }
+          .reputation {
+            margin: 0 0 14px;
+            p {
+              font-size: 12px;
+              line-height: 20px;
+              font-weight: 600;
+              margin: 0;
+              background-color: #eee;
+              padding: 2px 7px;
+              border-radius: 2px;
+              span {
+                font-weight: normal;
+                display: inline-block;
+                margin-left: 5px;
+              }
+            }
+          }
+        }
+        .actions {
+          @media screen and (max-width: 767px) {
+            width: 100%;
+            justify-content: flex-start !important;
+          }
+          .plugin-price {
+            min-width: 40px;
+            height: 40px;
+            padding: 4px 8px;
+            background-color: #eee;
+            line-height: 40px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            margin: 0;
+            @media screen and (max-width: 575px) {
+              height: 35px;
+              line-height: 35px;
+              font-size: 12px;
+              font-weight: 600;
+            }
+          }
+          .btn {
+            @include theme-btn($width: 140px, $padding: 10px);
+            margin-left: 10px;
+            height: 40px;
+            @media screen and (max-width: 575px) {
+              @include theme-btn($width: auto, $padding: 10px);
+              height: 35px;
+              margin-left: 5px;
+            }
+            &.save {
+              i {
+                padding-right: 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .plugin-detail {
+      .detail-tabs-wraper {
+        .tabs {
+          margin: 0px;
+          padding: 0px;
+          list-style: none;
+          border-bottom: 2px solid #eee;
+          @media screen and (max-width: 575px) {
+            border: 1px solid #eeeeee;
+          }
+          li {
+            font-size: 15px;
+            background: none;
+            display: inline-block;
+            padding: 10px 15px;
+            cursor: pointer;
+            border: 2px solid transparent;
+            border-bottom: 0;
+            margin-bottom: -2px;
+            @media screen and (max-width: 575px) {
+              width: 100%;
+              margin-bottom: -1px;
+              border: 1px solid #eeeeee;
+              padding: 8px 10px;
+            }
+            &:hover {
+              background-color: #eee;
+            }
+            &.current {
+              background-color: $white;
+              border-color: #eee;
+              @media screen and (max-width: 575px) {
+                background-color: $primary_color;
+                color: $white;
+                border-color: $primary_color;
+              }
+            }
+          }
+        }
+        .tab-content {
+          display: none;
+          padding: 30px 15px;
+          @media screen and (max-width: 575px) {
+            padding: 15px 15px;
+            border: 1px solid #eee;
+            border-top: 0;
+            margin-bottom: 30px;
+          }
+          &.current {
+            display: inherit;
+          }
+          .content-title {
+            font-size: 19px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            @media screen and (max-width: 575px) {
+              font-size: 18px;
+              margin-bottom: 10px;
+            }
+          }
+          ul {
+            list-style: square;
+            li {
+              line-height: 28px;
+              text-transform: capitalize;
+            }
+          }
+          .plugin-reviews {
+            ul {
+              list-style: none;
+              margin: 0;
+              padding: 0;
+              .plugin-review {
+                padding-bottom: 15px;
+                margin-bottom: 15px;
+                border-bottom: 1px solid #eee;
+                &:last-child {
+                  border-bottom: none;
+                }
+                .review-avtar {
+                  width: 60px;
+                  margin-right: 15px;
+                  img {
+                    width: 100%;
+                  }
+                }
+                .review {
+                  width: calc(100% - 75px);
+                  .review-header {
+                    margin-bottom: 10px;
+                    .header-top {
+                      margin-bottom: 5px;
+                      flex-wrap: wrap;
+                      .ratings {
+                        img {
+                          width: 100px;
+                          margin-right: 10px;
+                        }
+                      }
+                      .product-ratings {
+                        display: flex;
+                        flex-wrap: wrap;
+                        @media only screen and (max-width: 767px) {
+                          flex-direction: column;
+                        }
+                        .rate {
+                          width: 50%;
+                        }
+                      }
+                      .review-title {
+                        font-size: 16px;
+                        color: $primary-color;
+                      }
+                    }
+                  }
+                  .header-bottom {
+                    flex-wrap: wrap;
+                    .review-author {
+                      margin-right: 10px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .write-review-wrap {
+            margin: 30px 0;
+            .write-review-title {
+              font-size: 19px;
+              font-weight: 600;
+              border-bottom: 1px solid $light-color;
+              padding-bottom: 15px;
+              margin-bottom: 20px;
+              i {
+                padding-right: 15px;
+              }
+            }
+            .review-form-wrap {
+              form {
+                .form-group {
+                  padding-top: 10px;
+                  @media screen and (max-width: 767px) {
+                    padding-top: 0px;
+                  }
+                  label {
+                    color: #454d57;
+                    font-size: 14px;
+                    left: 15px;
+                    top: 5px;
+                  }
+                  .form-control {
+                    border: 1px solid $light-color;
+                    border-radius: 6px;
+                    padding: 10px 12px;
+                    background-image: none;
+                    font-size: 14px;
+                    font-weight: 500;
+                  }
+                  .rating-wrap {
+                    width: 100%;
+                    fieldset,
+                    label {
+                      margin: 0;
+                      padding: 6px;
+                      font-size: 18px;
+                    }
+                    .rating {
+                      border: none;
+                      float: left;
+                      & > input {
+                        display: none;
+                      }
+                      & > label {
+                        color: #ddd;
+                        float: right;
+                        &:before {
+                          margin: 5px;
+                          font-size: 1.25em;
+                          font-family: FontAwesome;
+                          display: inline-block;
+                          content: "\f005";
+                        }
+                      }
+                      & > .half {
+                        &:before {
+                          content: "\f089";
+                          position: absolute;
+                        }
+                      }
+                      & > input:checked ~ label,
+                      &:not(:checked) > label:hover,
+                      &:not(:checked) > label:hover ~ label {
+                        color: #ffd700;
+                      }
+                      & > input:checked + label:hover,
+                      & > input:checked ~ label:hover,
+                      & > label:hover ~ input:checked ~ label,
+                      & > input:checked ~ label:hover ~ label {
+                        color: #ffcc33;
+                      }
+                    }
+                  }
+                }
+                .submit-btn {
+                  padding: 0 15px;
+                  margin: 20px 0 0;
+                  width: 100%;
+                  text-align: right;
+                  .btn {
+                    background-color: $primary-color;
+                    text-transform: inherit;
+                    &:hover {
+                      background-color: $secondary-color;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .contect-form {
+            .form-group {
+              padding-top: 0px;
+              .bmd-label-static {
+                color: #454d57;
+                font-size: 14px;
+                left: 15px;
+                top: 5px;
+              }
+              textarea {
+                border: 1px solid #c3cde4;
+                border-radius: 6px;
+                padding: 10px 12px;
+                background-image: none;
+                font-size: 14px;
+                font-weight: 500;
+              }
+            }
+            .send-btn {
+              margin: 20px 0 0;
+              width: 100%;
+              display: flex;
+              .btn {
+                background-color: $primary-color;
+                text-transform: inherit;
+                color: white;
+                &:hover {
+                  background-color: $secondary-color;
+                }
+              }
+              .overlay {
+                margin-left: 30px;
+              }
+            }
+          }
+        }
+      }
+      .related-add-ons-wrap {
+        .related-ttile {
+          font-size: 22px;
+          font-weight: 600;
+          padding-bottom: 10px;
+          margin-bottom: 20px;
+          border-bottom: 1px solid #eee;
+        }
+        ul {
+          list-style: none;
+          .realted-item {
+            padding-bottom: 15px;
+            margin-bottom: 15px;
+            border-bottom: 1px solid #eee;
+            align-items: center;
+            .p-image {
+              width: 60px;
+              height: 60px;
+              margin-right: 15px;
+              border-radius: 100%;
+              overflow: hidden;
+              @media screen and (max-width: 767px) {
+                width: 45px;
+                height: 45px;
+              }
+              img {
+                width: 100%;
+              }
+            }
+            .title {
+              width: calc(100% - 75px);
+              font-size: 15px;
+              word-break: break-word;
+              a {
+                font-size: 15px;
+                font-weight: 400;
+                color: #454d57;
+                &:hover {
+                  text-decoration: none;
+                }
+              }
+            }
+            &:last-child {
+              border-bottom: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+

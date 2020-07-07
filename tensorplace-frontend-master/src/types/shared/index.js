@@ -1,0 +1,3 @@
+export const UNAUTHORISED = 'UNAUTHORISED';
+export const ERROR = 'ERROR';
+export const RESET_SERVER_ERROR = 'RESET_SERVER_ERROR';

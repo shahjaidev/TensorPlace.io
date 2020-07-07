@@ -1,0 +1,107 @@
+.page-body-wraper {
+  .main-content {
+    padding: 30px 0;
+    .page-title {
+      h1 {
+        font-size: 28px;
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+    }
+    .treding-list {
+      .card {
+        border: 1px solid $light-color;
+        box-shadow: none;
+        padding: 25px;
+        margin-bottom: 25px;
+        .card-body {
+          padding: 0;
+          .card-top {
+            margin-bottom: 10px;
+            .icon {
+              width: 30px;
+              height: 30px;
+              border-radius: 100%;
+              text-align: center;
+              line-height: 23px;
+              border: 1px solid $text-color;
+              margin-right: 10px;
+              img {
+                width: 18px;
+              }
+            }
+            .id {
+              font-size: 13px;
+            }
+          }
+          .card-title {
+            font-size: 26px;
+            font-weight: 600;
+            margin: 0;
+          }
+          .tag,
+          p {
+            font-size: 16px;
+            margin-bottom: 10px;
+          }
+          .tags-wrap {
+            margin-bottom: 20px;
+            .tag-title {
+              font-weight: 600;
+              margin-right: 10px;
+              margin-bottom: 0;
+            }
+            ul {
+              list-style: none;
+              li {
+                display: inline-block;
+                margin: 0 2px;
+                a {
+                  color: $text-color;
+                  background-color: #f4f4f4;
+                  padding: 0px 6px;
+                  font-size: 12px;
+                  border-radius: 2px;
+                  display: flex;
+                  align-items: center;
+                  &:hover {
+                    color: $white;
+                    background-color: $primary-color;
+                    text-decoration: none;
+                  }
+                }
+              }
+            }
+          }
+          .btn.Performance {
+            @include theme-btn($width: 220px, $padding: 10px);
+            border: 1px solid $light-color;
+            background: transparent;
+            color: $text-color;
+            box-shadow: none;
+            &:hover {
+              color: $white;
+            }
+          }
+          .from-group {
+            margin-bottom: 15px;
+            .btn {
+              @include theme-btn($width: 180px, $padding: 10px);
+              margin-right: 10px;
+            }
+          }
+          .rating {
+            margin-bottom: 20px;
+            img {
+              width: 100px;
+            }
+          }
+          .card-footer {
+            padding: 20px 0 0;
+            margin-top: 15px;
+          }
+        }
+      }
+    }
+  }
+}

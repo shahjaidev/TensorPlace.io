@@ -1,0 +1,57 @@
+.side-bar {
+  margin-top: 46px;
+  @media screen and (max-width: 767px) {
+    margin-top: 0;
+  }
+  ul {
+    margin: 0px;
+    padding: 0;
+    list-style: none;
+    li {
+      padding: 0px;
+      margin-top: 1px;
+      border: none;
+      cursor: pointer;
+      background-color: $white;
+      &:hover {
+        background-color: #f9f9fc;
+      }
+      a {
+        padding: 25px;
+        font-weight: 600;
+        color: #454d57;
+        font-size: 16px;
+        line-height: 26px;
+        text-decoration: none;
+        display: block;
+        @media screen and (max-width: 767px) {
+          padding: 15px;
+        }
+        &:hover {
+          color: $primary-color;
+        }
+        &.active {
+          color: $primary-color;
+        }
+      }
+    }
+  }
+}
+
+.pro {
+  .side-bar {
+    margin-top: 46px;
+    @media screen and (max-width: 991px) {
+      margin-top: 0;
+    }
+    ul {
+      li {
+        a {
+          @media screen and (max-width: 991px) {
+            padding: 15px;
+          }
+        }
+      }
+    }
+  }
+}

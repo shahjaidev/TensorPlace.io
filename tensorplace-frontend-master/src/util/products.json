@@ -1,0 +1,13 @@
+[
+  {
+    "title": "Product Title",
+    "slug": "product-title1",
+    "rating": 15,
+    "reputation": "3.4",
+    "shortDesc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    "language": ["Learning", "Machine"],
+    "company": "Tens Technologies",
+    "totalPurchase": "1000",
+    "price": "20"
+  }
+]

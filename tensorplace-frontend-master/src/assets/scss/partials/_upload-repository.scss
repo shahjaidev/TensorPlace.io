@@ -1,0 +1,171 @@
+.upload-repo-wrap {
+  .page-title {
+    h4 {
+      font-size: 22px;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+  }
+  .form-wrap {
+    background-color: $white;
+    border: 1px solid $light-color;
+    padding: 25px;
+    border-radius: 4px;
+    box-shadow: 0px 0px 15px 0px rgba(211, 211, 211, 0.7);
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(211, 211, 211, 0.7);
+    -moz-box-shadow: 0px 0px 15px 0px rgba(211, 211, 211, 0.7);
+    form {
+      .form-group-top {
+        margin-bottom: 20px;
+        overflow: hidden;
+        label {
+          font-size: 15px;
+          top: 10px;
+          color: $text_color;
+          font-weight: 600;
+          display: block;
+          &.checkbox-inline {
+            font-weight: normal;
+            cursor: pointer;
+            width: 50%;
+            float: left;
+            margin-bottom: 10px;
+            @media screen and (max-width: 575px) {
+              width: 100%;
+            }
+          }
+        }
+      }
+      .form-group {
+        label {
+          font-size: 15px;
+          top: 10px;
+          color: $text_color;
+          font-weight: 600;
+        }
+        &.is-focused {
+          label {
+            color: $primary_color;
+          }
+        }
+        h6 {
+          font-size: 20px;
+          font-weight: 600;
+          margin-bottom: 0px;
+        }
+        .form-control-file {
+          position: relative;
+          &::before {
+            content: "Choose File";
+            width: 104px;
+            height: 40px;
+            background: $primary_color;
+            position: absolute;
+            z-index: 1;
+            color: $white;
+            font-size: 15px;
+            text-align: center;
+            line-height: 32px;
+          }
+          &:focus {
+            outline: none;
+          }
+        }
+        .submit {
+          @include theme-btn($width: 180px, $padding: 10px);
+          margin-top: 20px;
+        }
+      }
+      .file-upload-wraper {
+        width: 100%;
+        position: relative;
+        margin-bottom: 10px;
+        .image {
+          max-width: 120px;
+          img {
+            width: 100%;
+          }
+        }
+        .bmd-label-floating {
+          font-size: 15px;
+          color: $text_color;
+          font-weight: 600;
+          margin-bottom: 10px;
+          span {
+            font-size: 12px;
+            font-weight: 500;
+          }
+        }
+        .drop {
+          width: 96%;
+          height: 96%;
+          border: 3px dashed $light-color;
+          overflow: hidden;
+          padding: 15px;
+          text-align: center;
+          background: white;
+          .count {
+            width: 500px;
+            color: #8e99a5;
+            @media screen and (max-width: 575px) {
+              width: 100%;
+              flex-wrap: wrap;
+            }
+            .upload-btn {
+              @include theme-btn($width: 180px, $padding: 10px);
+              margin-right: 15px;
+              i {
+                font-size: 16px;
+                color: $white;
+                padding-right: 10px;
+              }
+            }
+            .tit {
+              font-size: 16px;
+              color: $text_color;
+            }
+          }
+          input {
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+            background: red;
+            opacity: 0;
+            margin: auto;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+          }
+        }
+        .list {
+          width: 100%;
+          text-align: left;
+          span {
+            display: block;
+          }
+        }
+      }
+    }
+    .form-footer {
+      padding: 20px 0;
+      border-top: 1px solid $light-color;
+      @media screen and (max-width: 575px) {
+        flex-wrap: wrap;
+      }
+      .btn {
+        box-shadow: none;
+        border: 1px solid $light-color;
+        font-size: 14px;
+        text-transform: inherit;
+        margin-left: 15px;
+        font-weight: 600;
+        &:hover {
+          background-color: $primary_color;
+          color: $white;
+        }
+      }
+    }
+  }
+}

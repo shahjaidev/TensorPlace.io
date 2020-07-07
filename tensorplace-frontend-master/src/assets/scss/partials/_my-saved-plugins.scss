@@ -1,0 +1,593 @@
+.my-saved-plugins {
+  background: #eff3f5;
+  .main-content {
+    padding: 50px 0;
+    @media screen and (max-width: 767px) {
+      padding: 30px 0;
+    }
+    .home-top-section {
+      margin: 20px 0 30px;
+      .page-title {
+        h1 {
+          font-size: 32px;
+          font-weight: 600;
+          margin-bottom: 20px;
+        }
+      }
+      .about-us {
+        p {
+          font-size: 19px;
+          line-height: 33px;
+          padding: 0 60px;
+        }
+      }
+    }
+    .treding-list-filter {
+      .page-title {
+        h4 {
+          font-size: 24px;
+          font-weight: 600;
+          margin-bottom: 20px;
+          @media screen and (max-width: 767px) {
+            font-size: 22px;
+            margin-bottom: 8px;
+          }
+        }
+      }
+      .sidebar-tilte {
+        font-size: 15px;
+        font-weight: 400;
+        margin-bottom: 15px;
+      }
+      .plugin-filter-wraper {
+        .accordion {
+          .card-body {
+            background-color: white;
+          }
+          .card-header {
+            padding: 25px;
+            margin-top: 1px;
+            border: none;
+            cursor: pointer;
+            &:hover {
+              background-color: $bg-light;
+            }
+            &::after {
+              font-family: "FontAwesome";
+              font-size: 12px;
+              content: "\f068";
+              float: right;
+              color: $primary-color;
+            }
+            &.collapsed {
+              &:after {
+                content: "\f067";
+              }
+            }
+            .card-title {
+              font-weight: 600;
+              font-size: 17px;
+            }
+          }
+          .checkbox {
+            label {
+              color: $text-color;
+              input[type="checkbox"]:checked + .checkbox-decorator .check {
+                background-color: $white;
+                border-color: $primary-color;
+              }
+              input[type="checkbox"]:checked + .checkbox-decorator .check::before {
+                color: $primary-color;
+              }
+            }
+          }
+        }
+      }
+      .plugin-card-wrap {
+        h4 {
+          font-size: 22px;
+          font-weight: 600;
+          margin-bottom: 20px !important;
+        }
+        .card {
+          border: 1px solid $light-color;
+          box-shadow: none;
+          padding: 15px;
+          margin-bottom: 25px;
+          transition: all 0.5s;
+          -webkit-transition: all 0.5s;
+          -moz-transition: all 0.5s;
+          box-shadow: 0px 0px 15px 0px rgba(211, 211, 211, 0.7);
+          -webkit-box-shadow: 0px 0px 15px 0px rgba(211, 211, 211, 0.7);
+          -moz-box-shadow: 0px 0px 15px 0px rgba(211, 211, 211, 0.7);
+          &:hover {
+            box-shadow: 0px 22px 40px 0px rgba(211, 211, 211, 0.6);
+            -webkit-box-shadow: 0px 22px 40px 0px rgba(211, 211, 211, 0.6);
+            -moz-box-shadow: 0px 22px 40px 0px rgba(211, 211, 211, 0.6);
+          }
+          .card-body {
+            padding: 0;
+            position: relative;
+            .card-top {
+              margin-bottom: 10px;
+              .card-img {
+                width: 60px;
+                height: 30px;
+                margin-right: 15px;
+                @media screen and (max-width: 620px) {
+                  width: 42px;
+                  height: 30px;
+                  margin-right: 10px;
+                }
+                img {
+                  width: 100%;
+                }
+              }
+              .card-content {
+                width: calc(100% - 75px);
+                @media screen and (max-width: 620px) {
+                  width: calc(100% - 52px);
+                }
+                .card-content-header {
+                  margin: 0 0 14px;
+                  .plugin-info {
+                    width: calc(100% - 75px);
+                    margin-right: 15px;
+                    .card-title {
+                      font-size: 18px;
+                      line-height: 22px;
+                      font-weight: 600;
+                      margin: 0 0 4px;
+                      a {
+                        color: $text-color;
+                        &:hover {
+                          color: $primary-color;
+                        }
+                      }
+                    }
+                    .rating {
+                      margin-bottom: 5px;
+                      .rating-wrap {
+                        display: flex;
+                        .dv-star-rating {
+                          label {
+                            margin: 0;
+                          }
+                        }
+                      }
+                      .rating-count {
+                        margin-left: 8px;
+                        font-size: 14px;
+                        a {
+                          color: $text-color;
+                          &:hover {
+                            text-decoration: none;
+                          }
+                        }
+                      }
+                      img {
+                        width: 100px;
+                        margin-right: 10px;
+                      }
+                    }
+                    .reputation {
+                      p {
+                        font-size: 14px;
+                        font-weight: 600;
+                        margin: 0;
+                        background-color: #eee;
+                        padding: 2px 7px;
+                        border-radius: 2px;
+                        // span {
+                        //   font-weight: normal;
+                        //   display: inline-block;
+                        //   margin-left: 5px;
+                        // }
+                      }
+                    }
+                  }
+                  .plugin-price {
+                    width: 60px;
+                    p {
+                      font-size: 15px;
+                      font-weight: 500;
+                      margin: 0;
+                      width: 45px;
+                      height: 45px;
+                      border-radius: 100%;
+                      background: #eee;
+                      text-align: center;
+                      line-height: 45px;
+                      @media screen and (max-width: 620px) {
+                        font-size: 12px;
+                        margin-left: 7px;
+                        width: 35px;
+                        height: 35px;
+                        line-height: 35px;
+                      }
+                      &.free {
+                        color: $white;
+                        background-color: $primary-color;
+                      }
+                    }
+                  }
+                }
+                p {
+                  font-size: 14px;
+                  line-height: 20px;
+                  margin-bottom: 10px;
+                }
+                .tags-wrap {
+                  .tag-title {
+                    font-weight: 600;
+                    margin-right: 10px;
+                    margin-bottom: 0;
+                    font-size: 14px;
+                  }
+                  ul {
+                    list-style: none;
+                    li {
+                      display: inline-block;
+                      margin: 0px 2px;
+                      a {
+                        color: $text-color;
+                        background-color: #f4f4f4;
+                        padding: 0px 6px;
+                        font-size: 12px;
+                        border-radius: 2px;
+                        display: flex;
+                        align-items: center;
+                        &:hover {
+                          color: $white;
+                          background-color: $primary-color;
+                          text-decoration: none;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            .card-footer {
+              padding: 10px 0 0;
+              margin-top: 15px;
+              ul {
+                list-style: none;
+                li {
+                  margin-bottom: 8px;
+                  i {
+                    color: #bbb;
+                  }
+                  h5 {
+                    font-size: 13px;
+                    padding-left: 10px;
+                  }
+                  &:last-child {
+                    margin: 0;
+                  }
+                }
+              }
+              .product-action {
+                display: flex;
+                align-items: center;
+                .fa-edit {
+                  font-size: 22px;
+                  color: $text-color;
+                }
+                a {
+                  display: block;
+                  height: 20px;
+                }
+                i {
+                  &:hover {
+                    color: $primary-color;
+                    border-color: $primary-color;
+                  }
+                }
+                .view-link {
+                  a {
+                    color: $text-color;
+                    padding: 2px;
+                    border: 2px solid $text-color;
+                    position: relative;
+                    width: 16px;
+                    height: 16px;
+                    display: inherit;
+                    transition: all 0.5s;
+                    margin-left: 15px;
+                    i {
+                      font-size: 13px;
+                      transform: rotate(-45deg);
+                      position: absolute;
+                      right: -4px;
+                      top: -4px;
+                      background: $white;
+                    }
+                    &:hover {
+                      color: $primary-color;
+                      border-color: $primary-color;
+                    }
+                  }
+                }
+              }
+            }
+            .btn.Performance {
+              @include theme-btn($width: 220px, $padding: 10px);
+              border: 1px solid $light-color;
+              background: transparent;
+              color: $text-color;
+              box-shadow: none;
+              &:hover {
+                color: $white;
+              }
+            }
+            .from-group {
+              margin-bottom: 15px;
+              width: 100%;
+              .btn {
+                @include theme-btn($width: 180px, $padding: 10px);
+                margin-right: 10px;
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 5px;
+  border-radius: 5px;
+  background: $primary-color;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 20px;
+  background: #fff;
+  cursor: pointer;
+  border: 2px solid #097361;
+}
+
+.form-check-inline.checkboxFont {
+  .form-check-input {
+    height: 16px;
+    width: 16px;
+  }
+}
+
+// .filter-btn {
+//     .btn {
+//         @include theme-btn($width: 115px, $padding: 10px);
+//         margin-right: 10px;
+//         .fa-filter {
+//             margin-right: 5px;
+//         }
+//     }
+// }
+// .filter {
+//     .sidepanel {
+//         width: 0;
+//         position: fixed;
+//         z-index: 999;
+//         height: 100%;
+//         top: 0;
+//         left: 0;
+//         background-color: $white;
+//         overflow-x: hidden;
+//         transition: 0.5s;
+//         padding-top: 60px;
+//         box-shadow: 0 7px 25px 7px #9b9b9b8a;
+//         a {
+//             padding: 2px 5px 0px 0px;
+//             text-decoration: none;
+//             font-size: 25px;
+//             color: #818181;
+//             display: block;
+//             transition: 0.3s;
+//             &:hover {
+//                 color: #f1f1f1;
+//             }
+//         }
+//         .closebtn {
+//             position: absolute;
+//             top: 0;
+//             right: 25px;
+//             font-size: 36px;
+//         }
+//         ul.box {
+//             display: flex;
+//             flex-direction: column;
+//             list-style: none;
+//             padding: 0;
+//             margin: 0;
+//             .list {
+//                 margin-bottom: 20px;
+//                 .checkbox label {
+//                     color: #354168;
+//                 }
+//                 body {
+//                     background: #FDFDFD;
+//                     font-family: "Segoe WP", "Segoe UI", Helvetica, Arial, sans-serif;
+//                     text-align: center;
+//                 }
+//                 h1,
+//                 h2 {
+//                     color: #888;
+//                     margin: 0;
+//                     font-weight: normal;
+//                 }
+//                 h1 {
+//                     padding-top: 1.5em;
+//                     padding-bottom: 2em;
+//                 }
+//                 h2 {
+//                     clear: both;
+//                     color: #aaa;
+//                     padding: 2em 0 0.3em
+//                 }
+//                 em {
+//                     display: block;
+//                     margin: .5em auto 2em;
+//                     color: #bbb;
+//                 }
+//                 p,
+//                 p a {
+//                     color: #aaa;
+//                     text-decoration: none;
+//                 }
+//                 p a:hover,
+//                 p a:focus {
+//                     text-decoration: underline;
+//                 }
+//                 p+p {
+//                     color: #bbb;
+//                     margin-top: 2em;
+//                 }
+//                 .detail {
+//                     position: absolute;
+//                     text-align: right;
+//                     right: 5px;
+//                     bottom: 5px;
+//                     width: 50%;
+//                 }
+//                 a[href*="intent"] {
+//                     display: inline-block;
+//                     margin-top: 0.4em;
+//                 }
+//                 /*
+//                    * Rating styles
+//                    */
+//                 .rating {
+//                     margin: 0 auto 1em;
+//                     display: flex;
+//                     justify-content: flex-end;
+//                 }
+//                 .rating.rating1 {
+//                     flex-direction: row-reverse;
+//                 }
+//                 .rating input {
+//                     float: right;
+//                     opacity: 0;
+//                     position: absolute;
+//                 }
+//                 .rating a,
+//                 .rating label {
+//                     float: right;
+//                     color: #aaa;
+//                     text-decoration: none;
+//                     -webkit-transition: color .4s;
+//                     -moz-transition: color .4s;
+//                     -o-transition: color .4s;
+//                     transition: color .4s;
+//                 }
+//                 .rating label:hover~label,
+//                 .rating input:focus~label,
+//                 .rating label:hover,
+//                 .rating a:hover,
+//                 .rating a:hover~a,
+//                 .rating a:focus,
+//                 .rating a:focus~a {
+//                     color: orange;
+//                     cursor: pointer;
+//                 }
+//                 .rating2 {
+//                     direction: rtl;
+//                 }
+//                 .rating2 a {
+//                     float: none
+//                 }
+//             }
+//         }
+//     }
+//     .title {
+//         h2 {
+//             font-size: 28px;
+//             font-weight: bold;
+//             margin-bottom: 20px;
+//         }
+//     }
+//     .card {
+//         box-shadow: none;
+//         padding: 0px 35px;
+//         width: 400px;
+//         @media screen and (max-width: 420px) {
+//             width: 310px;
+//         }
+//         h2 {
+//             font-size: 26px;
+//             font-weight: 600;
+//             margin-bottom: 10px;
+//         }
+//         .box-title {
+//             font-size: 16px;
+//             margin-bottom: 10px;
+//             font-weight: 600;
+//             text-transform: uppercase;
+//         }
+//         .slidecontainer {
+//             label {
+//                 font-size: 16px;
+//                 margin-bottom: 10px;
+//             }
+//         }
+//         .min-max {
+//             span {
+//                 font-size: 11px;
+//             }
+//         }
+//         .title-key {
+//             width: 100%;
+//             font-size: 15px;
+//             min-height: 55px;
+//             border: 1px solid $light-color;
+//             float: left;
+//             padding: 10px;
+//             margin-bottom: 10px;
+//         }
+//         .btn {
+//             @include theme-btn($width: 100%, $padding: 10px);
+//             margin-right: 10px;
+//             white-space: normal;
+//             margin-bottom: 10px;
+//         }
+//         .bmd-form-group {
+//             padding-top: 0;
+//             select.form-control {
+//                 border: 1px solid $light-color;
+//                 -webkit-appearance: button;
+//                 padding: 3px 10px;
+//                 color: #354168;
+//                 font-size: 14px;
+//                 font-weight: 600;
+//                 background-image: none;
+//             }
+//         }
+//     }
+// }
+.checkbox label input[type="checkbox"]:checked + .checkbox-decorator .check:before,
+label.checkbox-inline input[type="checkbox"]:checked + .checkbox-decorator .check:before {
+  color: $primary-color;
+  box-shadow: 0 0 0 10px, 10px -10px 0 10px, 32px 0 0 20px, 32px 0 20px, -5px 5px 0 10px, 20px -12px 0 11px;
+  animation: b 0.3s forwards;
+}
+
+.checkbox label input[type="checkbox"]:checked + .checkbox-decorator .check,
+label.checkbox-inline input[type="checkbox"]:checked + .checkbox-decorator .check {
+  color: $primary-color;
+  border-color: $primary-color;
+}

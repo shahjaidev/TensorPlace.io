@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap");
+
+/*======Variables========*/
+
+$primary_color: #48bec0;
+$primary_light: #eeeeee;
+$secondary_color: #009688;
+
+$text_color: #454d57;
+$white: #fff;
+$light-color: #c3cde4;
+$bg-light: #f9f9fc;
+body {
+  font-family: "Open Sans", sans-serif;
+  color: $text_color;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+a {
+  color: $primary_color;
+}
+
+@mixin theme-btn($width: 180px, $padding: 10px) {
+  background-color: $primary_color;
+  color: $white;
+  font-size: 14px;
+  font-weight: 600;
+  width: $width;
+  padding: $padding;
+  @media screen and (max-width: 575px) {
+    font-size: 12px;
+  }
+  &:hover {
+    background-color: rgba($primary_color, 0.8);
+  }
+}
+
+.container {
+  @media screen and (max-width: 1200px) {
+    max-width: 100%;
+  }
+}
+.error,
+.error-message {
+  color: red;
+}
+
+.product-card {
+  height: calc(100% - 25px);
+  .card-body {
+    display: flex;
+    flex-direction: column;
+  }
+  .card-footer {
+    margin-top: auto !important;
+    padding-top: 15px;
+  }
+}
+
+.progress-circle {
+  margin: 5px 0px 0px;
+  position: relative;
+  padding: 0;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  line-height: 55px;
+  margin-bottom: 10px;
+}
+
+.__react_component_tooltip {
+  max-width: 360px;
+  @media only screen and (max-width: 600px) {
+    max-width: 100%;
+  }
+  p {
+    font-size: 12px !important;
+  }
+}
+
+.overlay {
+  &.loader {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 9998;
+    top: 0;
+    transition: all 0.5s ease-in-out;
+    div {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+
+.bmd-form-group {
+  .form-control {
+    &:-ms-input-placeholder {
+      /* Internet Explorer 10-11 */
+      color: $light-color;
+    }
+    &::placeholder {
+      color: $light-color;
+      font-weight: 500;
+    }
+  }
+}

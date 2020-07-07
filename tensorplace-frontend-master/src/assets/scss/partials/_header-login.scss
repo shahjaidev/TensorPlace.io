@@ -1,0 +1,165 @@
+header {
+  padding: 15px 0;
+  background: $white;
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.08);
+  -webkit-box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.08);
+  position: relative;
+  .header-top {
+    .brand-title {
+      img {
+        width: 60px;
+        @media screen and (max-width: 575px) {
+          width: 40px;
+        }
+      }
+      p {
+        margin-bottom: 0;
+        font-size: 32px;
+        font-weight: 700;
+        margin-left: 8px;
+        @media screen and (max-width: 575px) {
+          font-size: 22px;
+        }
+      }
+    }
+    .user {
+      .btn-group {
+        .btn {
+          background-color: $bg-light !important;
+          color: $text_color;
+          text-transform: inherit;
+          font-weight: 600;
+          width: auto;
+          line-height: 16px;
+          font-size: 16px;
+          padding: 7px 15px !important;
+          margin-bottom: 0 !important;
+          @media screen and (max-width: 1076px) and (min-width: 992px) {
+            padding: 7px 8px !important;
+          }
+          @media screen and (max-width: 575px) {
+            font-size: 14px;
+          }
+          img {
+            width: 30px;
+            height: 30px;
+            border-radius: 100%;
+            margin-right: 8px;
+          }
+          &:hover,
+          &:focus {
+            background-color: transparent;
+          }
+          &:after {
+            margin-left: 8px;
+          }
+        }
+      }
+    }
+    .search-wraper {
+      width: 90%;
+      justify-content: flex-end;
+      border-top: 0;
+      padding: 0;
+      @media screen and (max-width: 991px) {
+        margin-top: 20px;
+        width: 100%;
+      }
+      @media screen and (max-width: 575px) {
+        margin-top: 10px;
+      }
+      .bmd-form-group {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        .collapse {
+          width: calc(100% - 125px) !important;
+          margin-right: 15px;
+          display: block !important;
+          .form-control {
+            font-size: 14px;
+            padding: 5px 10px;
+            border: 1px solid #c3cde4;
+            background-image: inherit;
+            border-radius: 2px;
+            height: 44px;
+            max-width: 100%;
+            float: right;
+            @media screen and (max-width: 575px) {
+              height: 40px;
+            }
+          }
+        }
+        .btn {
+          width: inherit;
+          height: inherit;
+          border-radius: 2px;
+          background-color: $primary_color;
+          color: #fff;
+          font-size: 14px;
+          font-weight: 600;
+          width: 100px;
+          padding: 0;
+          font-size: 15px;
+          text-decoration: inherit;
+          text-transform: inherit;
+          height: 44px;
+          overflow: hidden;
+          @media screen and (max-width: 575px) {
+            height: 40px;
+          }
+          i {
+            font-size: 21px;
+            line-height: 24px;
+          }
+          span {
+            padding-left: 5px;
+            vertical-align: top;
+            line-height: 22px;
+          }
+        }
+      }
+    }
+    .nevigation-wrap {
+      margin-right: 5px;
+      ul {
+        list-style: none;
+        margin-top: 6px;
+        li {
+          display: inline-block;
+          .account {
+            background-color: $bg-light;
+            color: $text_color;
+            text-transform: inherit;
+            font-weight: 600;
+            width: auto;
+            font-size: 16px;
+            line-height: 16px;
+            padding: 14px 15px;
+            margin-bottom: 6px;
+            @media screen and (max-width: 1076px) and (min-width: 992px) {
+              padding: 14px 8px;
+            }
+            @media screen and (max-width: 575px) {
+              font-size: 14px;
+            }
+          }
+          .btn-group {
+            margin: 10px 0 0;
+            .btn {
+              background-color: $bg-light;
+              color: $text_color;
+              text-transform: inherit;
+              font-weight: 600;
+              width: auto;
+              line-height: 16px;
+              font-size: 16px;
+              padding: 7px 15px !important;
+              margin-bottom: 0 !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}

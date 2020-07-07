@@ -1,0 +1,107 @@
+.checkout-wrap {
+  min-height: 82vh;
+  .page-title {
+    margin-bottom: 30px;
+    @media screen and (max-width: 767px) {
+      margin-bottom: 20px;
+    }
+    h2 {
+      font-size: 28px;
+      font-weight: 600;
+      @media screen and (max-width: 767px) {
+        font-size: 24px;
+      }
+    }
+  }
+  .details-check {
+    background-color: $white;
+    padding: 15px;
+    .customers-details {
+      .column1 {
+        .billing-details {
+          h3 {
+            font-size: 19px;
+            font-weight: 600;
+            margin-bottom: 20px;
+          }
+          .form-group {
+            padding-top: 10px;
+            @media screen and (max-width: 767px) {
+              padding-top: 0;
+            }
+            label {
+              color: #454d57;
+              font-size: 14px;
+              left: 15px;
+              top: 5px;
+            }
+            .form-control {
+              border: 1px solid $light-color;
+              border-radius: 6px;
+              padding: 10px 12px;
+              background-image: none;
+              font-size: 14px;
+              font-weight: 500;
+            }
+          }
+        }
+      }
+      .column2 {
+        .shipping-details {
+          margin-top: 20px;
+          #ship-to-different-address {
+            .checkbox {
+              label {
+                font-size: 22px;
+                line-height: 22px;
+                color: $text-color;
+                font-weight: 600;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .order-wrap {
+    background-color: $white;
+    padding: 15px;
+    @media screen and (max-width: 767px) {
+      margin-top: 20px;
+    }
+    .order-inner {
+      h3 {
+        font-size: 19px;
+        font-weight: 600;
+        margin-bottom: 20px;
+      }
+      .order-table {
+        margin-bottom: 50px;
+        @media screen and (max-width: 767px) {
+          margin-bottom: 20px;
+        }
+        table {
+          width: 100%;
+          tr {
+            border-bottom: 1px solid $light-color;
+            &:last-child {
+              border: 0;
+            }
+            td {
+              padding: 10px 0;
+              &.total-price {
+                font-size: 20px;
+                color: $primary_color;
+              }
+            }
+          }
+        }
+      }
+      .order-now-btn {
+        .order-now {
+          @include theme-btn($width: 100%, $padding: 10px);
+        }
+      }
+    }
+  }
+}
